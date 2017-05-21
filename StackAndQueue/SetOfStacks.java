@@ -22,8 +22,8 @@ public class SetOfStacks {
 
         int size = myList.size();
 
-        for(int i=0;i<size;i++){
-            Stack obj = myList.get(i);
+        if(size > 0) {
+            Stack obj = myList.get(size-1);
             if(obj.size() < threshold){
                 obj.push(data);
                 return;
